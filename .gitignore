@@ -1,0 +1,43 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+/.git
+.github
+.vscode
+build
+
+# Log
+*.log
+*.log.*
+*.json
+*.jsonl
+
+# Data
+!**/alpaca-data-conversation.json
+data/
+playground/Preference_data
+playground/data/sharegpt4v_mix665k_cap23k_coco-ap9k_lcs3k_sam9k_div2k.json
+playground/data/SMR.json
+# Editor
+.idea
+*.swp
+
+# Other
+.DS_Store
+wandb
+output
+
+checkpoints
+ckpts*
+
+.ipynb_checkpoints
+*.ipynb
+*.log
+
+# DevContainer
+!.devcontainer/*
+
+# Demo
+serve_images/
