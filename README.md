@@ -17,7 +17,7 @@
 
 
 ## 🔥 Update
-- [06/11] 🔥 SliME is coming! We release the [paper](https://arxiv.org/pdf/2403.18814.pdf), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
+- [06/11]🔥SliME is coming! We release the [paper](https://arxiv.org/pdf/2403.18814.pdf), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
 - [06/11]🔥SliME-70B will be released soon.
 
 ## 👀 Contents
