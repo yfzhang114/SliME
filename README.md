@@ -13,7 +13,7 @@
 - [06/11] 🔥 SliME is coming! We release the [paper](https://arxiv.org/pdf/2403.18814.pdf), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
 - [06/11]🔥SliME-70B will be released soon.
 
-## Contents
+## 👀 Contents
 - [Install](#install)
 - [Model](#model)
 - [Preparation](#preparation)
@@ -23,7 +23,7 @@
 - [Citation](#citation)
 
 
-## Install
+## 🔮 Install
 Please follow the instructions below to install the required packages.
 
 
@@ -50,7 +50,7 @@ pip install flash-attn --no-build-isolation
 
 ```
 
-## Model
+## 🔍 Model
 
 We provide all our fully finetuned models on Stage 1/2 and 3 data for SliME:
 
@@ -71,7 +71,7 @@ Here are the pretrained weights on Stage 1/2 data only:
 | SliME-70B | Llama-3-70B-Instruct | CLIP-L | LLaVA-Pretrain | 1e | [ckpt](https://huggingface.co/yifanzhang114/SliME-llama3-70B) |
 
 
-## Preparation
+## 🔮 Preparation
 ### Dataset
 Please follow [LLaVA](https://github.com/haotian-liu/LLaVA) and [SharedGPT4V](https://sharegpt4v.github.io/) to prepare the corresponding images and data.
 
@@ -170,10 +170,16 @@ Download images using this [url](https://drive.google.com/file/d/1dqqa3MnrxMXaU_
 
 Download images using this [url](https://huggingface.co/OpenGVLab/InternVL/resolve/main/geoqa%2B_images.zip)
 
-## Train
-<div align=center>
+## 📈 Train
+
+<div align='center' >
+<details>
+<summary> Click to see the detail model structure</summary>
+<p align="center">
 <img width="100%" src="images/teaser.png"/>
+</details>
 </div>
+
 
 SliME training consists of three stages: (1) training the global projector and attention adapter specifically; (2) training the local compression layer; and (3) training the full model.
 
@@ -199,7 +205,7 @@ bash scripts/llama/llama3_8b_sft.sh
 Please find more training scripts of in `scripts/`.
 
 
-## Evaluation
+## 📈 Evaluation
 We perform evaluation on several image-based benchmarks. Please see [Evaluation](docs/Evaluation.md) for the detailes.
 
 <div align=center>
@@ -214,7 +220,7 @@ bash scripts/llama/eval/textvqa.sh
 ```
 Please find more evaluation scripts in `scripts/MODEL_PATH`.
 
-## Examples
+## 👀 Examples
 We provide some examples in this section. More examples can be found in our [project page](https://SliME.github.io/).
 
 ### Hi-Resolution Understanding
@@ -222,13 +228,14 @@ We provide some examples in this section. More examples can be found in our [pro
 <img width="98%" src="images/hr1.png"/>
 </div>
 
-<div align=center>
-<img width="98%" src="images/hr2.png"/>
-</div>
-
-### Generation with Reasoning
-<div align=center>
-<img width="98%" src="images/code_generation.png"/>
+<div align='center' >
+<details>
+<summary> Click to expand more examples</summary>
+<p align="center">
+    <img src="images/hr2.png" width="100%" height="100%">
+    <img src="images/code_generation.png" width="100%" height="100%">
+    <img src="images/story.png" width="100%" height="100%">
+</details>
 </div>
 
 
