@@ -1,22 +1,27 @@
 #!/bin/bash
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-# sh ./scripts/v1_5/eval/mme.sh
-name=llava-v1.5-7b
-python -m llava.eval.model_vqa_loader \
-    --model-path liuhaotian/llava-v1.5-7b \
-    --question-file ./playground/data/eval/MME/llava_mme.jsonl \
-    --image-folder ./playground/data/eval/MME/MME_Benchmark_release_version \
-    --answers-file ./playground/data/eval/MME/answers/$name.jsonl \
-    --temperature 0 \
-    --conv-mode vicuna_v1 \
-    --test-prompt '\nAnswer the question using a single word or phrase.' \
-    --max_new_tokens 64 \
-    --model_base none
+name="$1"
+for checkpoint in '' #checkpoint-3000 checkpoint-6000 
+do
+    
+    model_name=$name-$checkpoint
+    model=/mnt/workspace/xue.w/yf/checkpoint/$name/$checkpoint
+    python -m llava.eval.model_vqa_loader \
+        --model-path $model \
+        --question-file ./playground/data/eval/MME/llava_mme.jsonl \
+        --image-folder ./playground/data/eval/MME/MME_Benchmark_release_version \
+        --answers-file ./playground/data/eval/MME/answers/$model_name.jsonl \
+        --temperature 0. \
+        --conv-mode vicuna_v1 # --use-qlora True --qlora-path $lora_path
 
-cd ./playground/data/eval/MME
+    echo $model_name
+    cd ./playground/data/eval/MME
 
-python convert_answer_to_mme.py --experiment $name
+    python convert_answer_to_mme.py --experiment $model_name
 
-cd eval_tool
+    cd eval_tool
 
-python calculation.py --results_dir answers/$name
+    python calculation.py --results_dir answers/$model_name
+
+done

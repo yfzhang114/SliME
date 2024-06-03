@@ -1,16 +1,17 @@
 #!/bin/bash
 
-gpu_list="${CUDA_VISIBLE_DEVICES:-0}"
+gpu_list="${CUDA_VISIBLE_DEVICES:-0,1,2,3,4,5,6,7}"
 IFS=',' read -ra GPULIST <<< "$gpu_list"
 
 CHUNKS=${#GPULIST[@]}
 
-CKPT="llava-v1.5-13b"
 SPLIT="llava_vqav2_mscoco_test-dev2015"
+model_name="$1"
+CKPT=$model_name
 
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python -m llava.eval.model_vqa_loader \
-        --model-path liuhaotian/llava-v1.5-13b \
+        --model-path /mnt/data/xue.w/yf/checkpoint/$model_name \
         --question-file ./playground/data/eval/vqav2/$SPLIT.jsonl \
         --image-folder ./playground/data/eval/vqav2/test2015 \
         --answers-file ./playground/data/eval/vqav2/answers/$SPLIT/$CKPT/${CHUNKS}_${IDX}.jsonl \

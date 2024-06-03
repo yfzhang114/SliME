@@ -3,6 +3,7 @@
 
 # Beyond LLaVA-HD: Diving into High-Resolution Large Multimodal Models
 
+![Multi-Modal](https://img.shields.io/badge/Task-Multi--Modal-red) 
 <a href='https://arxiv.org/pdf/2403.18814.pdf'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 <a href='https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'></a>
 <a href='https://huggingface.co/datasets/yifanzhang114/SMR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
@@ -10,6 +11,7 @@
 
 ## 🔥 Update
 - [06/11] 🔥 SliME is coming! We release the [paper](https://arxiv.org/pdf/2403.18814.pdf), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
+- [06/11]🔥SliME-70B will be released soon.
 
 ## Contents
 - [Install](#install)
@@ -57,7 +59,7 @@ We provide all our fully finetuned models on Stage 1/2 and 3 data for SliME:
 | SliME-7B | Vicuna-7B-v1.5 | CLIP-L | SharedGPT+SMR | full_ft | [ckpt](https://huggingface.co/yifanzhang114/SliME-vicuna-7B) |
 | SliME-8B | Llama-3-8B-Instruct | CLIP-L | SharedGPT+SMR | full_ft | [ckpt](https://huggingface.co/yifanzhang114/SliME-Llama3-8B) |
 | SliME-13B | Vicuna-13B-v1.5 | CLIP-L | SharedGPT+SMR | full_ft | [ckpt](https://huggingface.co/yifanzhang114/SliME-vicuna-13B) |
-| SliME-70B | Vicuna-13B-v1.5 | CLIP-L | SharedGPT+SMR | Lora | [ckpt](https://huggingface.co/yifanzhang114/SliME-llama3-70B) |
+| SliME-70B | Llama-3-70B-Instruct | CLIP-L | SharedGPT+SMR | Lora | [ckpt](https://huggingface.co/yifanzhang114/SliME-llama3-70B) |
 
 
 Here are the pretrained weights on Stage 1/2 data only:
