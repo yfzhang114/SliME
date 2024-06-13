@@ -4,7 +4,7 @@
 # Beyond LLaVA-HD: Diving into High-Resolution Large Multimodal Models
 
 ![Multi-Modal](https://img.shields.io/badge/Task-Multi--Modal-red) 
-<a href='https://arxiv.org/pdf/2403.18814.pdf'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='https://arxiv.org/abs/2406.08487'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 <a href='https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'></a>
 <a href='https://huggingface.co/datasets/yifanzhang114/SMR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
 
@@ -13,11 +13,11 @@
     <img src="images/title.png" width="100%" height="100%">
 </p>
 
-<font size=7><div align='center' >  [[📖 arXiv Paper](https://arxiv.org/pdf/2405.21075)] [[📊 Dataset](https://huggingface.co/datasets/yifanzhang114/SMR)][[🏆 Models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d)]  </div></font>
+<font size=7><div align='center' >  [[📖 arXiv Paper](https://arxiv.org/abs/2406.08487)] [[📊 Dataset](https://huggingface.co/datasets/yifanzhang114/SMR)][[🏆 Models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d)]  </div></font>
 
 
 ## 🔥 Update
-- [06/11]🔥SliME is coming! We release the [paper](https://arxiv.org/pdf/2403.18814.pdf), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
+- [06/11]🔥SliME is coming! We release the [paper](https://arxiv.org/abs/2406.08487), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
 - [06/11]🔥SliME-70B will be released soon.
 
 ## 👀 Contents
@@ -249,7 +249,14 @@ We provide some examples in this section. More examples can be found in our [pro
 ## Citation
 If you find this repo useful for your research, please consider citing the paper
 ```
-
+@misc{zhang2024llavahd,
+      title={Beyond LLaVA-HD: Diving into High-Resolution Large Multimodal Models}, 
+      author={Yi-Fan Zhang and Qingsong Wen and Chaoyou Fu and Xue Wang and Zhang Zhang and Liang Wang and Rong Jin},
+      year={2024},
+      eprint={2406.08487},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## Acknowledgement

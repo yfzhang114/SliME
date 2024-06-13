@@ -20,6 +20,7 @@ data/
 playground/Preference_data
 playground/data/sharegpt4v_mix665k_cap23k_coco-ap9k_lcs3k_sam9k_div2k.json
 playground/data/SMR.json
+scripts/llama-lora-70B
 # Editor
 .idea
 *.swp
