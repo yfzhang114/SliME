@@ -147,7 +147,7 @@ class GatedBlock(nn.Module):
         """
         clean_logits = x @ self.w_gate.to(x.dtype)
         if self.training:
-            raw_noise_stddev = x @ self.w_gate
+            raw_noise_stddev = x @ self.w_noise
             noise_stddev = ((self.softplus(raw_noise_stddev) + noise_epsilon))
             noisy_logits = clean_logits + (torch.randn_like(clean_logits) * noise_stddev)
             logits = noisy_logits
