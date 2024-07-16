@@ -14,6 +14,14 @@ Refer to this [repo](https://github.com/BradyFU/Video-MME) for data download and
 
 The SliME strategy emphasizes the importance of global context in relation to local image details. For videos, we apply average pooling to the image features of all 8 frames to extract the global feature. These 8 frames serve as local features, compressed by our local compression layer. Thanks to this compression layer, although the maximum model length is just 2048, we can process up to 10 frames, ensuring rich temporal information is retained.
 
+The inference code can be found in ```llava/eval/video``. Just edit some lines of the code to adapt it to your needs.
+
+
+```
+num_patch_width, num_patch_height = 4, 2 ## line 240 in llava_arch, enables us to include 8 frames
+process_images # line 247 in mm_utils, avoids doing image patching
+```
+
 ## Results
 
 |      Model     | LLM Params |        |               | Overall (%) |        | Short Video (%) |          | Medium Video (%) |          | Long Video (%) |          |
