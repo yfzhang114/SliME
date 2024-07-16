@@ -17,7 +17,7 @@
 
 
 ## 🔥 Update
-- [07/16]🔥The SliME strategy demonstrates exceptional versatility, extending **seamlessly to video analysis** (See [Slime_video.md](https://github.com/yfzhang114/SliME/Slime_video.md)). Remarkably, even though the model has never been specifically trained on video data, it is capable of processing up to **8 frames**. In the Video-MME benchmark, the model surpasses numerous 7B/8B baselines that have undergone training on video datasets on [Video-MME benchmark](https://video-mme.github.io/home_page.html#leaderboard).
+- [07/16]🔥The SliME strategy demonstrates exceptional versatility, extending **seamlessly to video analysis** (See [Slime_video.md](https://github.com/yfzhang114/SliME/blob/main/Slime_video.md)). Remarkably, even though the model has never been specifically trained on video data, it is capable of processing up to **8 frames**. In the Video-MME benchmark, the model surpasses numerous 7B/8B baselines that have undergone training on video datasets on [Video-MME benchmark](https://video-mme.github.io/home_page.html#leaderboard).
 - [06/11]🔥SliME is coming! We release the [paper](https://arxiv.org/abs/2406.08487), [code](https://github.com/yfzhang114/SliME), [models](https://huggingface.co/collections/yifanzhang114/slime-665bcb2d0d71762b86fdbd2d), and [data](https://huggingface.co/datasets/yifanzhang114/SMR) for SliME!
 - [06/11]🔥SliME-70B will be released soon.
 
