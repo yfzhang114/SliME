@@ -227,6 +227,9 @@ bash scripts/llama/eval/textvqa.sh
 ```
 Please find more evaluation scripts in `scripts/MODEL_PATH`.
 
+
+The evaluation code and needed files can be found [here](https://huggingface.co/datasets/yifanzhang114/SMR/blob/main/eval.zip).
+
 ## 👀 Examples
 We provide some examples in this section. More examples can be found in our [project page](https://SliME.github.io/).
 
