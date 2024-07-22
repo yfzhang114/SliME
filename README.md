@@ -111,6 +111,9 @@ data
 │   └── images
 ```
 
+You can find the pre-processing code at [this URL](https://huggingface.co/datasets/yifanzhang114/SMR/tree/main/data_processing_smr). If you have any questions about file names or image paths, please refer to the pre-processing code.
+
+
 1. Arxiv QA
 Download images using this [download url](https://huggingface.co/datasets/MMInstruction/ArxivQA/resolve/main/images.tgz)
 
