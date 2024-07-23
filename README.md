@@ -256,13 +256,11 @@ We provide some examples in this section. More examples can be found in our [pro
 ## Citation
 If you find this repo useful for your research, please consider citing the paper
 ```
-@misc{zhang2024llavahd,
-      title={Beyond LLaVA-HD: Diving into High-Resolution Large Multimodal Models}, 
-      author={Yi-Fan Zhang and Qingsong Wen and Chaoyou Fu and Xue Wang and Zhang Zhang and Liang Wang and Rong Jin},
-      year={2024},
-      eprint={2406.08487},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{zhang2024beyond,
+  title={Beyond LLaVA-HD: Diving into High-Resolution Large Multimodal Models},
+  author={Zhang, Yi-Fan and Wen, Qingsong and Fu, Chaoyou and Wang, Xue and Zhang, Zhang and Wang, Liang and Jin, Rong},
+  journal={arXiv preprint arXiv:2406.08487},
+  year={2024}
 }
 ```
 
