@@ -248,7 +248,7 @@ class TextGuidedSampler(nn.Module):
     def forward(self, local_f, text_embedding, attn_mask=None):
         
         local_probs = self.selector(local_f, text_embedding, attn_mask)
-        local_probs = softmax_with_temperature(local_probs, temperature=0.5)
+        # local_probs = softmax_with_temperature(local_probs, temperature=0.5)
                 
         # Add gumbel noise
         if self.training:
